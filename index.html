@@ -2,30 +2,35 @@
 
 <head>
     <title>Thermostat</title>
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/interface.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-88w0u/oucDSTE30ETLLIobzhT+bQ6CSsiqQyLZpwHvve89eqUA9F2Db6ST6jGRLx" crossorigin="anonymous">
     <link rel="stylesheet" href='css/style.css'></link>
 </head>
 
 <body>
+  <section class="container">
     <section>
-        <h1>Outdoor temperature: <span id="outdoor-temperature"></span></h1>
+        <h1>Outdoor temperature: <span id="outdoor-temperature"></span><img src="http://image.flaticon.com/icons/svg/178/178331.svg" alt="celsius" id="celsius" /></h1>
         <form id="select-city">
             <input id="current-city" type="text" placeholder="Enter a city"></input>
-            <input type="submit"></input>
+            <input type="submit" class="btn btn-default"></input>
         </form>
+        <img src="http://image.flaticon.com/icons/svg/178/178335.svg" alt="thermostat" id="thermometer" />
     </section>
     <section>
         <h1 id="temperature">temperature</h1>
         <p>
-            <button id="temperature-up">+</button>
-            <button id="temperature-down">-</button>
-            <button id="temperature-reset">reset</button>
-            power saving mode is <span id="power-saving-status">on</span>
-            <button id="powersaving-on">PSM on</button>
-            <button id="powersaving-off">PSM off</button>
+            <button id="temperature-up" class="btn btn-danger">+</button>
+            <button id="temperature-down" class="btn btn-success">-</button>
+            <button id="temperature-reset" class="btn btn-default">Reset</button>
+          <p class="lead"> Power saving mode is: <span id="power-saving-status">on</span></p>
+            <button id="powersaving-on" class="btn btn-success">PSM on</button>
+            <button id="powersaving-off" class="btn btn-danger">PSM off</button>
         </p>
     </section>
+    </section>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/interface.js"></script>
     <script src="src/thermostat.js"></script>
 </body>
 

@@ -9,3 +9,14 @@
 .high-usage {
   color: red;
 }
+
+#celsius {
+    width:25px; /* you can use % */
+    height: auto;
+}
+#thermometer {
+  width: auto;
+  height: 600px;
+  float: right;
+  padding-bottom: 100px;
+}
